@@ -1,0 +1,79 @@
+/*
+|| ------------------------------------------------------------------
+||  Program name:     IdMgmt3.css
+||  Created by:       Michael McLaughlin, Copyright 2007
+||  Creation date:    04/28/2007
+||  History:
+|| ------------------------------------------------------------------
+||  Date       Author                   Purpose
+|| --------   ----------------------   -----------------------------
+|| dd/mm/yy   {Name}                   {Brief statement of change.}
+|| ------------------------------------------------------------------
+||  Execution method: Stand alone CSS.
+||  Program purpose:  Designed as a Cascading Sytle Sheet.
+*/ ------------------------------------------------------------------
+
+  div#centered {border:0;height:80%;top:10%;left:10%;width:90%;position:absolute;}
+  body {background-color:smokewhite;font-family:"Tahoma"}
+
+  .italicExtraLarge  {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:3em;text-align:center;}
+  .italicLarge       {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:2em;text-align:center;}
+  .italicMedium      {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:1em;text-align:center;}
+  .italicSmall       {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:.5em;text-align:center;}
+  .italicExtraSmall  {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:.5em;text-align:center;}
+
+  .italicExtraLargeRight  {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:3em;text-align:center;}
+  .italicLargeRight       {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:2em;text-align:center;}
+  .italicMediumRight      {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:1em;text-align:center;}
+  .italicSmallRight       {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:.5em;text-align:center;}
+  .italicExtraSmallRight  {background-color:white;color:navy;font-family:"Tahoma";font-style:italic;font-size:.5em;text-align:center;}
+
+  input#newuserid {background-color:white;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#newuserid:focus {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#newuserid:hover {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#newpasswd {background-color:white;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#newpasswd:focus {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#newpasswd:hover {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#fname {background-color:white;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#fname:focus {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#fname:hover {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#lname {background-color:white;color:navy;font-family:"Tahoma";font-weight:bold;}
+  input#lname:focus {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#lname:hover {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#d_newuserid {background-color:lightgrey;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#d_newpasswd {background-color:lightgrey;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#d_fname {background-color:lightgrey;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#d_lname {background-color:lightgrey;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#adduser       {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#adduser:focus {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#adduser:hover {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+
+  input#d_adduser       {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#d_adduser:focus {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#d_adduser:hover {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+
+  input#viewuser      {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#viewuser:focus {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#viewuser:hover {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+
+  input#logout {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#logout:focus {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#logout:hover {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+
+  input#userid {background-color:white;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#userid:focus {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#userid:hover {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#passwd {background-color:white;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#passwd:focus {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+  input#passwd:hover {background-color:#FFFFCC;color:black;font-family:"Tahoma";font-weight:bold;}
+
+  input#login       {background-color:lightgrey;color:navy;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#login:focus {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+  input#login:hover {background-color:navy;color:yellow;font-family:"Tahoma";font-weight:bold;font-size:.8em;height:30px;vertical-align:middle;width:100px;}
+
