@@ -1,6 +1,7 @@
-.txt
-.json
-.DS_Store
-.exe
-.swf
+*.txt
+*.json
+*.DS_Store
+*.exe
+*.swf
 OCA/*
+*.TXT
