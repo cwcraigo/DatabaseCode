@@ -5,3 +5,5 @@
 *.swf
 OCA/*
 *.TXT
+*.sublime-project
+*.sublime-workspace
