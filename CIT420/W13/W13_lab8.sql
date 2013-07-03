@@ -153,5 +153,5 @@ END contact_plus;
 -- Display any compilation errors.
 SHOW ERRORS
 
-CALL contact_plus('Sherlock','','Holmes','CUSTOMER','HOME','London','England','99354','221B Bakers Street');
-CALL contact_plus('John','H','Watson','CUSTOMER','HOME','London','England','99354','221B Bakers Street');
+CALL contact_plus('Sherlock', '', 'Holmes', 'CUSTOMER', 'HOME', 'London', 'England', '99354', '221B Bakers Street');
+CALL contact_plus('John', 'H', 'Watson', 'CUSTOMER', 'HOME', 'London', 'England', '99354', '221B Bakers Street');

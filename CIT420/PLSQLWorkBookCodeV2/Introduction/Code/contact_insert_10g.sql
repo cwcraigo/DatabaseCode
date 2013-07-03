@@ -46,7 +46,9 @@ CREATE OR REPLACE PROCEDURE contact_insert_10g
   lv_credit_card_type    VARCHAR2(30);
   lv_member_type         VARCHAR2(30);
   lv_telephone_type      VARCHAR2(30);
-  
+
+  stmt                   VARCHAR2(2000);
+
 BEGIN
   -- Assign parameter values to local variables for nested assignments to DML subqueries.
   lv_address_type := pv_address_type;
@@ -54,43 +56,44 @@ BEGIN
   lv_credit_card_type := pv_credit_card_type;
   lv_member_type := pv_member_type;
   lv_telephone_type := pv_telephone_type;
-  
+
   -- Create a SAVEPOINT as a starting point.
   SAVEPOINT starting_point;
-  
+
   -- Fetch the .NEXTVAL pseudo column for use as a local variable in a DML.
   SELECT  member_s1.NEXTVAL
   INTO    lv_member_id
   FROM    dual;
-  
-  INSERT INTO member
-  ( member_id
-  , member_type
-  , account_number
-  , credit_card_number
-  , credit_card_type
-  , created_by
-  , creation_date
-  , last_updated_by
-  , last_update_date )
-  VALUES
-  ( lv_member_id
-  ,(SELECT   common_lookup_id
-    FROM     common_lookup
-    WHERE    common_lookup_table = 'MEMBER'
-    AND      common_lookup_column = 'MEMBER_TYPE'
-    AND      common_lookup_type = lv_member_type)
-  , pv_account_number
-  , pv_credit_card_number
-  ,(SELECT   common_lookup_id
-    FROM     common_lookup
-    WHERE    common_lookup_table = 'MEMBER'
-    AND      common_lookup_column = 'CREDIT_CARD_TYPE'
-    AND      common_lookup_type = lv_credit_card_type)
-  , pv_created_by
-  , pv_creation_date
-  , pv_last_updated_by
-  , pv_last_update_date );
+
+INSERT INTO member
+( member_id
+, member_type
+, account_number
+, credit_card_number
+, credit_card_type
+, created_by
+, creation_date
+, last_updated_by
+, last_update_date )
+VALUES
+( lv_member_id
+,(SELECT   common_lookup_id
+  FROM     common_lookup
+  WHERE    common_lookup_table = 'MEMBER'
+  AND      common_lookup_column = 'MEMBER_TYPE'
+  AND      common_lookup_type = lv_member_type)
+, pv_account_number
+, pv_credit_card_number
+,(SELECT   common_lookup_id
+  FROM     common_lookup
+  WHERE    common_lookup_table = 'MEMBER'
+  AND      common_lookup_column = 'CREDIT_CARD_TYPE'
+  AND      common_lookup_type = lv_credit_card_type)
+, pv_created_by
+, pv_creation_date
+, pv_last_updated_by
+, pv_last_update_date );
+
 
   -- Fetch the .NEXTVAL pseudo column for use as a local variable in a DML.
   SELECT  contact_s1.NEXTVAL
@@ -122,7 +125,7 @@ BEGIN
   , pv_created_by
   , pv_creation_date
   , pv_last_updated_by
-  , pv_last_update_date );  
+  , pv_last_update_date );
 
   -- Fetch the .NEXTVAL pseudo column for use as a local variable in a DML.
   SELECT  address_s1.NEXTVAL
@@ -144,7 +147,7 @@ BEGIN
   , pv_created_by
   , pv_creation_date
   , pv_last_updated_by
-  , pv_last_update_date );  
+  , pv_last_update_date );
 
   -- Fetch the .NEXTVAL pseudo column for use as a local variable in a DML.
   SELECT  street_address_s1.NEXTVAL
@@ -160,7 +163,7 @@ BEGIN
   , pv_created_by
   , pv_creation_date
   , pv_last_updated_by
-  , pv_last_update_date );  
+  , pv_last_update_date );
 
   -- Fetch the .NEXTVAL pseudo column for use as a local variable in a DML.
   SELECT  telephone_s1.NEXTVAL
@@ -186,7 +189,7 @@ BEGIN
   , pv_last_update_date);                             -- LAST_UPDATE_DATE
 
   COMMIT;
-EXCEPTION 
+EXCEPTION
   WHEN OTHERS THEN
     ROLLBACK TO starting_point;
     RETURN;

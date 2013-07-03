@@ -47,8 +47,7 @@ BEGIN
 	-- DECLARE LOCAL VARIABLES
 	DECLARE lv_item_title VARCHAR(60);
 	DECLARE lv_item_type 	INT;
-	DECLARE lv_return 		INT DEFAULT 0;
-	DECLARE lv_error 			INT DEFAULT 0;
+	DECLARE lv_return 		INT DEFAULT 1;
 	DECLARE lv_fetched 		INT DEFAULT 0;
 
 	DECLARE lab7_function_cursor CURSOR FOR
@@ -59,7 +58,7 @@ BEGIN
 
 	-- CONTINUE HANDLER TO SIGNIFY ERROR
 	DECLARE CONTINUE HANDLER FOR NOT FOUND SET lv_fetched := 1;
-	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET lv_error := 1;
+	DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET lv_return := 0;
 
 	OPEN lab7_function_cursor;
 	lab7_function_loop:LOOP
@@ -68,8 +67,6 @@ BEGIN
 
 		IF (lv_fetched = 1) THEN
 			LEAVE lab7_function_loop;
-		ELSE
-			SET lv_return := 1;
 		END IF;
 
 		UPDATE item
@@ -79,8 +76,7 @@ BEGIN
 
 		INSERT INTO logging VALUES (lv_item_title, NOW());
 
-		IF (lv_error = 1) THEN
-			SET lv_return := -1;
+		IF (lv_return = 0) THEN
 			LEAVE lab7_function_loop;
 		END IF;
 

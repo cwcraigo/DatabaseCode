@@ -9,7 +9,7 @@
 CREATE OR REPLACE TRIGGER insert_t1
 BEFORE INSERT OR UPDATE ON item
 FOR EACH ROW
-	WHEN (REGEXP_LIKE(new.item_title,'(^|.*)(S|s)tar (W|w)ars(.*)'))
+	WHEN (REGEXP_LIKE(new.item_title,'(^|.*)(S|s)tar\s(W|w)ars(.*)'))
 DECLARE
   lv_error  EXCEPTION;
   PRAGMA EXCEPTION_INIT(lv_error, -20001);

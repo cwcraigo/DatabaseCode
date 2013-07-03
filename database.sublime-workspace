@@ -1,0 +1,1775 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"system",
+				"system_user_name"
+			],
+			[
+				"system_",
+				"system_user_id"
+			],
+			[
+				"system_us",
+				"system_user_name"
+			],
+			[
+				"put",
+				"put_line"
+			],
+			[
+				"state",
+				"state_province"
+			],
+			[
+				"system_user",
+				"system_user_name"
+			],
+			[
+				"create_",
+				"create_identity_db4_mysql"
+			],
+			[
+				"sv_s",
+				"sv_sessionid"
+			],
+			[
+				"sv",
+				"sv_client_info"
+			],
+			[
+				"sv_",
+				"sv_sessionid"
+			],
+			[
+				"verify",
+				"verify_db_login"
+			],
+			[
+				"lv_sys",
+				"lv_system_user_group_id"
+			],
+			[
+				"lv_address",
+				"lv_address_type"
+			],
+			[
+				"string",
+				"stringLength"
+			],
+			[
+				"end",
+				"endOfFirst"
+			],
+			[
+				"dbms",
+				"dbms_output"
+			],
+			[
+				"las",
+				"last_name"
+			],
+			[
+				"ob",
+				"obsolete_date"
+			],
+			[
+				"test",
+				"test2"
+			],
+			[
+				"tes",
+				"test_create_new_db_user"
+			],
+			[
+				"cre",
+				"create_new_db_user"
+			],
+			[
+				"create",
+				"create_new_db_user"
+			],
+			[
+				"lv_",
+				"lv_result"
+			],
+			[
+				"lv",
+				"lv_fetched"
+			],
+			[
+				"pas",
+				"password"
+			],
+			[
+				"veri",
+				"verify_db_login"
+			],
+			[
+				"system_session",
+				"system_session_id"
+			],
+			[
+				"sv_sess",
+				"sv_session_id"
+			],
+			[
+				"LV",
+				"lv_return_value"
+			],
+			[
+				"inval",
+				"invalid_session"
+			],
+			[
+				"user",
+				"userid"
+			],
+			[
+				"lv_system",
+				"lv_system_user_id"
+			],
+			[
+				"record",
+				"record_session"
+			],
+			[
+				"blog",
+				"blog_topic"
+			],
+			[
+				"myT",
+				"myType_structure"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"if",
+				"if?	$… = ( … ) ? … : …"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"delete",
+				"delete_blog_entry"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"blog_entry_",
+				"blog_entry_id"
+			],
+			[
+				"blog_",
+				"blog_entry"
+			],
+			[
+				"blog_entry",
+				"blog_entry_topic"
+			],
+			[
+				"ch",
+				"check_topic"
+			],
+			[
+				"topic",
+				"topic_array"
+			],
+			[
+				"blog_en",
+				"blog_entry_id"
+			],
+			[
+				"get_blog",
+				"get_blog_topics"
+			],
+			[
+				"bind_par",
+				"bind_param"
+			],
+			[
+				"bl",
+				"blog_entry_id"
+			],
+			[
+				"_Se",
+				"_SESSION"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"D",
+				"div	Tag"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"o",
+				"ol	Tag"
+			],
+			[
+				"name_",
+				"name_function"
+			],
+			[
+				"name",
+				"name_function"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"app",
+				"appid"
+			],
+			[
+				"ty",
+				"type"
+			],
+			[
+				"count",
+				"country"
+			],
+			[
+				"END",
+				"enddate"
+			],
+			[
+				"pre",
+				"present_count"
+			],
+			[
+				"lead",
+				"leaders"
+			],
+			[
+				"sugg",
+				"suggestion"
+			],
+			[
+				"sugges",
+				"suggestion"
+			],
+			[
+				"vid",
+				"video_id"
+			],
+			[
+				"vide",
+				"video"
+			],
+			[
+				"like",
+				"like_count"
+			],
+			[
+				"els",
+				"else"
+			],
+			[
+				"ins",
+				"insert_comment"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"i",
+				"i	Tag"
+			],
+			[
+				"comm",
+				"comment_array"
+			],
+			[
+				"vi",
+				"video_id"
+			],
+			[
+				"comment",
+				"comment_array"
+			],
+			[
+				"crea",
+				"created_by"
+			],
+			[
+				"fea",
+				"featured_video"
+			],
+			[
+				"get_v",
+				"get_video_by_id"
+			],
+			[
+				"video",
+				"video"
+			],
+			[
+				"d",
+				"document	JS writing to doc CWC"
+			],
+			[
+				"total",
+				"totalviews"
+			],
+			[
+				"act",
+				"active_flag"
+			],
+			[
+				"str",
+				"string_check"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"dele",
+				"delete_video"
+			],
+			[
+				"Vide",
+				"Video"
+			],
+			[
+				"us",
+				"user_id"
+			],
+			[
+				"rel",
+				"relative"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"ab",
+				"absolute"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"le",
+				"leaderboard"
+			],
+			[
+				"work",
+				"worker"
+			],
+			[
+				"leader",
+				"leaderboard"
+			],
+			[
+				"dat",
+				"data"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"RETU",
+				"return_value"
+			],
+			[
+				"RET",
+				"return_value"
+			],
+			[
+				"ver",
+				"verify_db_login"
+			],
+			[
+				"re",
+				"return_value"
+			],
+			[
+				"r",
+				"RETURN"
+			],
+			[
+				"isset",
+				"isset_sessionid"
+			],
+			[
+				"aut",
+				"auto"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"vido_",
+				"video_title"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"url",
+				"urldecode"
+			],
+			[
+				"get",
+				"getItem"
+			],
+			[
+				"ge",
+				"getItem"
+			],
+			[
+				"style",
+				"style=\"margin"
+			],
+			[
+				"fun",
+				"function	JS function CWC"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"dt",
+				"dt"
+			],
+			[
+				"home",
+				"home_list"
+			],
+			[
+				"te",
+				"text-transform"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"doc",
+				"doc_root"
+			],
+			[
+				"curr",
+				"current_dir"
+			],
+			[
+				"Video",
+				"Videos"
+			],
+			[
+				"return",
+				"return_value"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "CIT420/S13_Final/UserAdmin.php",
+			"settings":
+			{
+				"buffer_size": 31277,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "CIT420/S13_Final/S13_final1_test.sql",
+			"settings":
+			{
+				"buffer_size": 12174,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CIT420/S13_Final/S13_final1.sql",
+			"settings":
+			{
+				"buffer_size": 3057,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CIT320/W13_oracle_lab7.sql",
+			"settings":
+			{
+				"buffer_size": 21545,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "CIT420/CIT420_Final_Instructions.txt",
+			"settings":
+			{
+				"buffer_size": 3039,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/CraigsMySQL.sublime-build",
+	"command_palette":
+	{
+		"height": 87.0,
+		"selected_items":
+		[
+			[
+				"sql",
+				"Set Syntax: SQL"
+			],
+			[
+				"php",
+				"Set Syntax: PHP"
+			],
+			[
+				"txt",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"SQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"snippet out",
+				"Snippet: Outline for blog-entry (blog.cwcraigo.com)"
+			],
+			[
+				"set syntax html",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"j",
+				"Set Syntax: Java"
+			],
+			[
+				"file",
+				"File: Copy Path"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pref",
+				"Preferences: Settings - Default"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"c+",
+				"Set Syntax: C++"
+			],
+			[
+				"xq",
+				"Set Syntax: XQuery"
+			],
+			[
+				"eq",
+				"Set Syntax: XQuery"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"ht",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"set Syntax:",
+				"Set Syntax: Makefile"
+			],
+			[
+				"x",
+				"Set Syntax: XSL"
+			],
+			[
+				"htn",
+				"Set Syntax: HTML (Erlang)"
+			],
+			[
+				"c",
+				"Set Syntax: C++"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Prototype"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ja",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ssphp",
+				"Set Syntax: PHP"
+			],
+			[
+				"SSSQL",
+				"Set Syntax: SQL"
+			],
+			[
+				"package control:",
+				"Package Control: Enable Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			],
+			[
+				"PHP",
+				"Set Syntax: PHP"
+			],
+			[
+				"in",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"HTML",
+				"HTML: Encode Special Characters"
+			],
+			[
+				"SQ",
+				"Set Syntax: SQL"
+			],
+			[
+				"",
+				"Convert Case: Lower Case"
+			]
+		],
+		"width": 441.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT320/W13_oracle_lab7.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT320/W13_oracle_lab6.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_final1.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_final1_test.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_final_oracle.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_sudo1.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_lab7.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/create_identity_db4_mysql.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/ofinal.sql",
+		"/Users/craigchristensen/Library/Application Support/Sublime Text 2/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/craigchristensen/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/create_identity_db3.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_oracle_final.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_final2.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_sudo2.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_sudo3.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/S13_final3.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_lab9.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/UserAdmin.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_lab10.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_lab11.sql",
+		"/Users/craigchristensen/Craigs_School/Spring2013/CIT312/TicWatch-master/UpdateWithAppControl/Hibernate.java",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_lab11.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/trigger_signal_sample.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/CIT420_Final_Instructions.txt",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/fix.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_EC.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_lab8.sql",
+		"/Users/craigchristensen/Library/Application Support/Sublime Text 2/Packages/Color Scheme - Default/Neon.tmTheme",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT320/narnia.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT320/kingdom_import.csv",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/PLSQLWorkBookCodeV2/Chapter9/Code/ex09-01.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/PLSQLWorkBookCodeV2/Introduction/Code/contact_insert_10g.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/lab7_testcase_translation.txt",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/PLSQLWorkBookCodeV2/Introduction/Code/create_workbook_store.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/lab7_testcase_translation.txt",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/S13_Final/lab7 testcase translation",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_lab7_nocursor.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_lab7.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_final1.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_final1_sudo.sql",
+		"/Users/craigchristensen/GitHub_Code/blog/blog_entries/ORACLE LOOPS AND CURSORS.sql",
+		"/Users/craigchristensen/GitHub_Code/blog/blog_entries/PL:SQL User Defined Types.sql",
+		"/Users/craigchristensen/GitHub_Code/blog/blog_entries/SOME ADVICE TO STUDENTS.sql",
+		"/Users/craigchristensen/GitHub_Code/blog/shCore.js",
+		"/Users/craigchristensen/GitHub_Code/blog/syntaxhighlighter_3.0.83/src/shCore.js",
+		"/Users/craigchristensen/Library/Application Support/Sublime Text 2/Packages/User/blog-entry.sublime-snippet",
+		"/Users/craigchristensen/GitHub_Code/blog/blog-comments.php",
+		"/Users/craigchristensen/GitHub_Code/blog/lib.php",
+		"/Users/craigchristensen/GitHub_Code/blog/blog_css.css",
+		"/Users/craigchristensen/GitHub_Code/blog/sftp-config.json",
+		"/Users/craigchristensen/GitHub_Code/blog/index.php",
+		"/Users/craigchristensen/GitHub_Code/blog/home.php",
+		"/Users/craigchristensen/Craigs_School/Spring2013/CIT430/Notes",
+		"/Users/craigchristensen/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/craigchristensen/GitHub_Code/cwcraigo.com/cwcraigo.js",
+		"/Users/craigchristensen/GitHub_Code/CupcakesByMeiske/views/imageForm.php",
+		"/Users/craigchristensen/GitHub_Code/CupcakesByMeiske/lib/css/CupcakesByMeiskeStyle.css",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/library/get_leaderboard.php",
+		"/Users/craigchristensen/GitHub_Code/CupcakesByMeiske/sftp-config.json",
+		"/Users/craigchristensen/GitHub_Code/cwcraigo.com/index.html",
+		"/Users/craigchristensen/GitHub_Code/cwcraigo.com/bootstrap/js/bootstrap.js",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/sftp-config.json",
+		"/Users/craigchristensen/GitHub_Code/cwcraigo.com/sftp-config.json",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/modules/header.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/home.php",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/index.html",
+		"/Users/craigchristensen/GitHub_Code/CupcakesByMeiske/modules/header.php",
+		"/Users/craigchristensen/Documents/mls_projects/bible/index.xqy",
+		"/Users/craigchristensen/Documents/mls_projects/setup_bible_db.xq",
+		"/Users/craigchristensen/Documents/mls_projects/index.xqy",
+		"/Users/craigchristensen/Craigs_School/Winter2013/CIT311/AllQuizes.txt",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/library/dashboard.js",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/library/leaderboard.js",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/library/leaderboard_worker.js",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/library/lib.js",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/library/petClass.js",
+		"/Users/craigchristensen/Library/Application Support/MarkLogic/Data/assignments.xml",
+		"/Users/craigchristensen/Craigs_School/Winter2013/CIT425/customer.xsl",
+		"/Users/craigchristensen/Craigs_School/Winter2013/CIT425/xquery-basics/unit01/setupdb.txt",
+		"/Users/craigchristensen/Documents/mls_projects/world-leaders/search.xqy",
+		"/Users/craigchristensen/Documents/mls_projects/bible/setup_bible_db.xq",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/suggestion_form.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/video_tutorial.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/video_view.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/errorDocs/404.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/errorDocs/500.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/views/suggestions.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/like.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/comment_pagination.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/model.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/js.js",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/css.css",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/suggestion_pagination.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/DBconn.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/library.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/movie_search.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/video_pagination.php",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/modules/footer.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_final2_sudo.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/IdMgmt3/UserAdmin.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_final2.sql",
+		"/Users/craigchristensen/GitHub_Code/CIT-mon/sftp-config.json",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/index.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/get_session_php_rewrite.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/W13_lab5.sql",
+		"/Users/craigchristensen/Dropbox/425_Snowflake/customer_final_draft.xsl",
+		"/Users/craigchristensen/Dropbox/425_Snowflake/customer.xml",
+		"/Users/craigchristensen/Dropbox/425_Snowflake/customerStyle.xsl",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/logInClientTest.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/CIT420Final_SQL.sql",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/CIT420Final.sql",
+		"/Users/craigchristensen/Craig's School/Winter 2013/CIT 356/cit-mon/screen.css",
+		"/Users/craigchristensen/Documents/Important Documents/ProductKeys&Passwords",
+		"/Users/craigchristensen/Craig's School/Winter 2013/CIT 356/cit-mon/library/lib.js",
+		"/Users/craigchristensen/Craig's School/Winter 2013/CIT 356/sftp-config.json",
+		"/Users/craigchristensen/GitHub_Code/NoobTech/lib/javaScript.js",
+		"/Users/craigchristensen/Desktop/get_session_php_rewrite.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/IdMgmt3/UserView.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/IdMgmt3/SignOnUserAdmin.php",
+		"/Users/craigchristensen/GitHub_Code/DB_Code/CIT420/create_identity_db3.sql",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/lib/css.css",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/lib/model.php",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/views/suggestion_form.php",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/views/video_tutorial.php",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/views/video_view.php",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/modules/header.php",
+		"/Users/craigchristensen/Desktop/GitHub_Code/NoobTech/index.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/craigchristensen/Desktop/Craig's School/Winter 2013/CIT 356/craig/4cmobile"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"get_session",
+			"file",
+			"visible",
+			"super+e",
+			"super+shift+",
+			"prev",
+			"add",
+			"NOW()",
+			"create_new_db_user",
+			"is_inserted",
+			"SYSDATE",
+			"$",
+			"create_new_db_user",
+			"get_session",
+			"DECLARE",
+			"'",
+			"get_session",
+			"contact_log",
+			":",
+			"1",
+			"common_lookup_column",
+			"common_lookup_table",
+			"member_contact",
+			"sv_counter",
+			"7",
+			"secondString",
+			"endOfSecond",
+			"firstString",
+			"endOfFirst",
+			"delimiter",
+			"str1",
+			"simple_sql_name",
+			"price_type",
+			"contact_insert_10g",
+			":",
+			"'||dbms_assert.enquote_literal(",
+			"pv_",
+			"now",
+			"remove_vhs",
+			"DECLARE",
+			"INT UNSIGNED",
+			"FUNCTION",
+			"DEFAULT",
+			"DECLARE",
+			"PROCEDURE",
+			",",
+			"is_inserted",
+			"SYSDATE",
+			"$",
+			"create_new_db_user",
+			"$_SESSION['sessionid']",
+			"--",
+			"verify_db_login",
+			"PROCEDURE",
+			"verify_db_login",
+			"SYSDATE",
+			"register_session",
+			"isset_sessionid",
+			"verify_db_login",
+			"VERIFY_DB_LOGIN",
+			"1",
+			"2",
+			"   AND @return_value  ",
+			"INIT TEST",
+			"test_get_session",
+			"FAILURE",
+			"SUCCESS!!!",
+			"test_get_session",
+			":",
+			"\"",
+			"lv_return_value",
+			"sv_client_info",
+			"sv_userid",
+			"error",
+			"fetched",
+			"VARCHAR",
+			"FUNCTION",
+			"sv_remote_addr",
+			"get_session",
+			"blog_topic",
+			"blog_array",
+			"blog_entry",
+			"blog_entry_id",
+			"lv_counter",
+			"\"",
+			"'",
+			"stmt",
+			"li>",
+			"li",
+			"ul",
+			"p>",
+			"<",
+			">",
+			"value=\"",
+			"topic_array",
+			"stmt",
+			"sql",
+			"stmt",
+			"S-TOPICS\"",
+			"topic_array",
+			"$entry",
+			"entry",
+			"sug_array",
+			"be.",
+			"insert_suggestion",
+			"topic",
+			"\\\\$",
+			"$",
+			"<",
+			"$",
+			"'",
+			"// ",
+			"[]",
+			"= '",
+			"h2",
+			"WITH",
+			"\"",
+			"file",
+			"Payroll",
+			"May",
+			"2",
+			" span8 offset2",
+			" size=\"10\"",
+			"\"",
+			"Photos",
+			"well",
+			"<h4 class=\"text-center\">",
+			"<h4"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Barneezle",
+			"VARCHAR(10) ",
+			"",
+			"ENUM('ACTIVE', 'NOT_ACTIVE') DEFAULT 'ACTIVE'                     ,date_removed    DATE",
+			"ENUM('ACTIVE', 'NOT_ACTIVE')",
+			"TIMESTAMP",
+			"NOW"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "CIT420/S13_Final/UserAdmin.php",
+					"settings":
+					{
+						"buffer_size": 31277,
+						"regions":
+						{
+							"TagLint":
+							{
+								"flags": 52,
+								"icon": "dot",
+								"regions":
+								[
+									[
+										28814,
+										28863
+									]
+								],
+								"scope": "variable.parameter"
+							}
+						},
+						"selection":
+						[
+							[
+								11503,
+								11503
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5146.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "CIT420/S13_Final/S13_final1_test.sql",
+					"settings":
+					{
+						"buffer_size": 12174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1012,
+								1047
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "CIT420/S13_Final/S13_final1.sql",
+					"settings":
+					{
+						"buffer_size": 3057,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1564.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "CIT320/W13_oracle_lab7.sql",
+					"settings":
+					{
+						"buffer_size": 21545,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5540.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "CIT420/CIT420_Final_Instructions.txt",
+					"settings":
+					{
+						"buffer_size": 3039,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1195,
+								1195
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110.0
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"is_xml": false,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2.0,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 97.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.672272087241,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 139.0
+	},
+	"output.git":
+	{
+		"height": 124.0
+	},
+	"output.sftp":
+	{
+		"height": 145.0
+	},
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"us",
+				"/Users/craigchristensen/mysql/IdMgmt3/UserAdmin.php"
+			],
+			[
+				"tes",
+				"/Users/craigchristensen/mysql/test_case2.sql"
+			],
+			[
+				"",
+				"MONDAY"
+			],
+			[
+				"sql",
+				"/Users/craigchristensen/mysql/CIT420Final.sql"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 154.0,
+	"status_bar_visible": true
+}

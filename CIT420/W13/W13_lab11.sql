@@ -1,5 +1,4 @@
-TEE W13_lab11.txt
-USE newstore
+USE newstore;
 
 SELECT "ITEM_LOG" AS "DROP";
 DROP TABLE IF EXISTS contact_log;
@@ -43,17 +42,8 @@ UPDATE contact
   SET last_name = 'Billy-Bob'
   WHERE last_name = 'Billy Bob';
 
-NOTEE
 -- SELECT * FROM contact\G
 SELECT * FROM contact_log\G
-
-
-
-
-
-
-
-
 
 
 /*

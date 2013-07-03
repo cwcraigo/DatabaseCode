@@ -3,7 +3,7 @@
 
 
 
-@ CIT320_lab6.sql;
+@ W13_oracle_lab6.sql;
 
 -- Open log file
 SPOOL log\CIT320_lab7.txt

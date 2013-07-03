@@ -1,0 +1,273 @@
+ERROR 1044 (42000): Access denied for user 'student'@'localhost' to database 'mealcalendar;'
++-------------+
+| SYSTEM_USER |
++-------------+
+| TABLE       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 0 rows affected (0.16 sec)
+
++-------------+
+| INSERT      |
++-------------+
+| SYSTEM_USER |
++-------------+
+1 row in set (0.16 sec)
+
+Query OK, 2 rows affected (0.17 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
++---------------+
+| COMMON_LOOKUP |
++---------------+
+| TABLE         |
++---------------+
+1 row in set (0.17 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
+Query OK, 0 rows affected (0.32 sec)
+
++---------------+
+| INSERT        |
++---------------+
+| COMMON_LOOKUP |
++---------------+
+1 row in set (0.32 sec)
+
+Query OK, 75 rows affected (0.32 sec)
+Records: 75  Duplicates: 0  Warnings: 0
+
++--------+
+| CLIENT |
++--------+
+| TABLE  |
++--------+
+1 row in set (0.32 sec)
+
+Query OK, 0 rows affected (0.32 sec)
+
+Query OK, 0 rows affected (0.47 sec)
+
++-----------------------+
+| TRIGGER               |
++-----------------------+
+| hash_password_trigger |
++-----------------------+
+1 row in set (0.47 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER' at line 1
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.27 sec)
+
++-------------+
+| MEASUREMENT |
++-------------+
+| TABLE       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++---------+
+| PRODUCT |
++---------+
+| TABLE   |
++---------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++------------+
+| INGREDIENT |
++------------+
+| TABLE      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++--------+
+| RECIPE |
++--------+
+| TABLE  |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
++---------------+
+| MEAL_SCHEDULE |
++---------------+
+| TABLE         |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> delimiter ;
+mysql> 
+mysql> 
+mysql> 
+mysql> 
+mysql> ;
+ERROR: 
+No query specified
+
+mysql> \. mealcalendar/create_meal_calendar_db.sql
+ERROR 1044 (42000): Access denied for user 'student'@'localhost' to database 'mealcalendar;'
+Query OK, 0 rows affected (0.00 sec)
+
++-------------+
+| SYSTEM_USER |
++-------------+
+| TABLE       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.05 sec)
+
+Query OK, 0 rows affected (0.17 sec)
+
++-------------+
+| INSERT      |
++-------------+
+| SYSTEM_USER |
++-------------+
+1 row in set (0.17 sec)
+
+Query OK, 2 rows affected (0.17 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
++---------------+
+| COMMON_LOOKUP |
++---------------+
+| TABLE         |
++---------------+
+1 row in set (0.17 sec)
+
+Query OK, 0 rows affected (0.18 sec)
+
+Query OK, 0 rows affected (0.38 sec)
+
++---------------+
+| INSERT        |
++---------------+
+| COMMON_LOOKUP |
++---------------+
+1 row in set (0.38 sec)
+
+Query OK, 75 rows affected (0.38 sec)
+Records: 75  Duplicates: 0  Warnings: 0
+
++--------+
+| CLIENT |
++--------+
+| TABLE  |
++--------+
+1 row in set (0.38 sec)
+
+Query OK, 0 rows affected (0.38 sec)
+
+Query OK, 0 rows affected (0.52 sec)
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DELIMITER' at line 1
++------------------------------+
+| TRIGGER                      |
++------------------------------+
+| hash_password_insert_trigger |
++------------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.27 sec)
+
++------------------------------+
+| TRIGGER                      |
++------------------------------+
+| hash_password_update_trigger |
++------------------------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.27 sec)
+
++--------+
+| INSERT |
++--------+
+| CLIENT |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 2 rows affected, 2 warnings (0.00 sec)
+Records: 2  Duplicates: 0  Warnings: 2
+
++-------------+
+| MEASUREMENT |
++-------------+
+| TABLE       |
++-------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
++---------+
+| PRODUCT |
++---------+
+| TABLE   |
++---------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
++--------+
+| RECIPE |
++--------+
+| TABLE  |
++--------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
++------------+
+| INGREDIENT |
++------------+
+| TABLE      |
++------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
++---------------+
+| MEAL_SCHEDULE |
++---------------+
+| TABLE         |
++---------------+
+1 row in set (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.15 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
