@@ -1,0 +1,2 @@
+select common_lookup_column, common_lookup_type, common_lookup_code from common_lookup
+/

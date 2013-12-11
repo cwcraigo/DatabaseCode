@@ -1,16 +1,21 @@
 
-DELETE FROM street_address
-  WHERE street_address_id > 15;
+-- DELETE FROM street_address
+--   WHERE street_address_id > 15;
 
-DELETE FROM address
-  WHERE address_id > 15;
+-- DELETE FROM address
+--   WHERE address_id > 15;
 
-DELETE FROM contact
-  WHERE first_name IN ('Sherlock', 'John')
-  AND   last_name  IN ('Holmes', 'Watson');
+-- DELETE FROM contact
+--   WHERE first_name IN ('Sherlock', 'John')
+--   AND   last_name  IN ('Holmes', 'Watson');
+
+
+
 
 DELIMITER $$
+
 DROP PROCEDURE IF EXISTS contact_plus$$
+
 CREATE PROCEDURE contact_plus
 ( pv_first_name          VARCHAR(20)
 , pv_middle_name         VARCHAR(20)
@@ -30,9 +35,9 @@ BEGIN
 
   DECLARE stmt VARCHAR(1024);
 
-  DECLARE lv_error INT DEFAULT 0;
+  DECLARE lv_success_value INT DEFAULT 1;
 
-  DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET lv_error := 1;
+  DECLARE CONTINUE HANDLER FOR SQLEXCEPTION SET lv_success_value := 0;
 
   SET @pv_first_name       := pv_first_name;
   SET @pv_middle_name      := pv_middle_name;
@@ -115,10 +120,12 @@ BEGIN
 
   DEALLOCATE PREPARE stmt;
 
-  IF (lv_error = 1) THEN
+  IF (lv_success_value = 0) THEN
     ROLLBACK TO starting_point;
+    SELECT 'FAILED' AS 'RESULT';
   ELSE
     COMMIT;
+    SELECT 'SUCCESS' AS 'RESULT';
   END IF;
 
 END;
@@ -129,15 +136,15 @@ CALL contact_plus('Sherlock','','Holmes','CUSTOMER','HOME','London','England','9
 CALL contact_plus('John','H','Watson','CUSTOMER','WORK','London','England','99354','221B Bakers Street',1,UTC_DATE(),1,UTC_DATE());
 SHOW WARNINGS;
 
-SELECT CONCAT(c.last_name, ', ',c.first_name,' ', IFNULL(c.middle_name,'')) AS 'NAME'
-     , cl1.common_lookup_type AS 'CONTACT_TYPE'
-     , cl2.common_lookup_type AS 'ADDRESS_TYPE'
-     , CONCAT(sa.street_address,' ',a.city,', ',a.state_province,' ',a.postal_code) AS 'ADDRESS'
-FROM contact c
-INNER JOIN address a ON c.contact_id = a.contact_id
-INNER JOIN street_address sa ON a.address_id = sa.address_id
-INNER JOIN common_lookup cl1 ON cl1.common_lookup_id = c.contact_type
-INNER JOIN common_lookup cl2 ON cl2.common_lookup_id = a.address_type
-WHERE c.first_name IN ('Sherlock', 'John');
+-- SELECT CONCAT(c.last_name, ', ',c.first_name,' ', IFNULL(c.middle_name,'')) AS 'NAME'
+--      , cl1.common_lookup_type AS 'CONTACT_TYPE'
+--      , cl2.common_lookup_type AS 'ADDRESS_TYPE'
+--      , CONCAT(sa.street_address,' ',a.city,', ',a.state_province,' ',a.postal_code) AS 'ADDRESS'
+-- FROM contact c
+-- INNER JOIN address a ON c.contact_id = a.contact_id
+-- INNER JOIN street_address sa ON a.address_id = sa.address_id
+-- INNER JOIN common_lookup cl1 ON cl1.common_lookup_id = c.contact_type
+-- INNER JOIN common_lookup cl2 ON cl2.common_lookup_id = a.address_type
+-- WHERE c.first_name IN ('Sherlock', 'John');
 
 

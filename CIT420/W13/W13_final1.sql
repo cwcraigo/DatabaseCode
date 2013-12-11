@@ -37,6 +37,22 @@ DECLARE c CURSOR FOR
 
 DECLARE CONTINUE HANDLER FOR NOT FOUND SET fetched := 0;
 
+
+SELECT   su.system_user_id
+	,        su.system_user_name
+	,        su.system_user_group_id
+	,        ss.system_remote_address
+	,        ss.system_session_id
+	INTO     lv_system_user_id
+	,        lv_system_user_name
+	,        lv_system_user_group_id
+	,        lv_system_remote_address
+	,        lv_system_session_id
+	FROM     system_user su JOIN system_session ss
+	ON       su.system_user_id = ss.system_user_id
+	WHERE    ss.system_session_number = sessionid
+	AND 		 ss.last_update_date BETWEEN NOW() AND DATE_ADD(NOW(), INTERVAL 5 MINUTE);
+
 OPEN c;
 myLoop:LOOP
 	FETCH c INTO lv_system_user_id

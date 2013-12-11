@@ -1,0 +1,37 @@
+Port IDMGMT2 to work against Oracle or MySQL (PHP Solution requires MySQL).
+Database Authentication, Part #1
+Database Authentication, Part #2
+Supplemental Information for a MySQL/PHP Implementation, and please note a database setup script is provided in the create_identity_db4_mysql.sql script for MySQL:
+MySQL Striped Views
+Implementing MySQL Striped Views in PHP
+Required:
+The final project should rewrite the independent queries into stand alone functions, procedures, or packages as appropriate. All queries or statements called by a function that also establishes a connection should be considered published, but all queries called by functions that passed a connection should be considered hidden or private. Test cases call only those published functions.
+It's recommended that you create a sequence diagram of function calls to determine which should be published or not. After re-writing all the independent queries, you need to test all use cases presented by the working code in the PHP/SQL sample. A SQL solution is worth the 100 points, and a PHP solution yields the 100 points and the replacement of two quizzes or labs with less than 100% grades.
+Trick: Any solution on the database backend should be portable across all databases. That means you need to look for a common solution framework. This solution uses queries to write to PHP web session variable ($_SERVER['client_info']), which should be implemented as OUT-only pass-by-reference parameters.
+Test case scripts should demonstrate each use case.
+
+
+1. [35 points] get_session (public); update_session (private); and record_session (private).
+(HINT: One pass-by-reference procedure with 4 IN mode parameters and 4 OUT mode parameters.)
+
+  Test Case #1: Verify a timeout due to more than a 5 minute lapse since the last client communication.
+  Test Case #2: Verify last update was within the last 5 minutes.
+  Test Case #3: Process an invalid host name change from the last communication.
+  Test Case #4: Process and invalid change because more than 5 minutes elapsed from last communication.
+
+2. [25 points] verify_db_login (public); isset_sessionid (private); and register_session (private).
+(HINT: One function to check whether a session is set with 1 IN mode parameter; and one procedure with 4 IN mode parameters and 1 OUT mode parameter.)
+
+  Test Case #1: Verify the submission of valid credentials.
+
+3. [20 points] create_new_db_user (public); and is_inserted (private).
+(HINT: One procedure with 6 IN mode parameters and 1 OUT mode parameter.)
+
+  Test Case #1: Verify call to the new procedure with an existing user.
+  Test Case #2: Verify call to the new procedure with a new user.
+
+4. [10 points] verify_credentials (public); and verify_db_login (public but private to this use).
+  (HINT: If there's no SQL you don't require a stored procedure, and must identify that no change is required.)
+
+5. [10 points] get_message (public).
+  (HINT: If there's no SQL you don't require a stored procedure, and must identify that no change is required.)

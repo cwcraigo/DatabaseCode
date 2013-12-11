@@ -78,31 +78,27 @@ DROP PROCEDURE IF EXISTS test_create_new_db_user$$
 CREATE PROCEDURE test_create_new_db_user()
 BEGIN
 
-  DECLARE userid         INT UNSIGNED DEFAULT 1;
-  DECLARE nuserid        VARCHAR(20)  DEFAULT 'administrator';
-  DECLARE npasswd        VARCHAR(40);
-  DECLARE fname          VARCHAR(20);
-  DECLARE lname          VARCHAR(20);
-  DECLARE ugroup         INT UNSIGNED DEFAULT 1;
-  DECLARE sv_client_info INT UNSIGNED DEFAULT 0;
-  DECLARE lv_result      INT UNSIGNED;
+  SELECT system_user_name INTO @nuserid FROM system_user LIMIT 1;
+  SET @sv_client_info = 0;
 
   -- Test Case #1: Verify call to the new procedure with an existing user.
-  CALL create_new_db_user(userid,nuserid,npasswd,fname,lname
-                          ,ugroup,sv_client_info,lv_result);
+  CALL create_new_db_user(@userid,@nuserid,@npasswd,@fname,@lname
+                         ,@ugroup,@sv_client_info,@lv_result);
 
   IF lv_result = 0 THEN
     SET @test1 := 1;
   END IF;
 
   -- Test Case #2: Verify call to the new procedure with a new user.
-  SET nuserid := 'cwcraigo';
-  SET npasswd := 'Pa$$w0rd';
-  SET fname   := 'Craig';
-  SET lname   := 'Christensen';
+  SET @userid = 1;
+  SET @ugroup = 1;
+  SET @nuserid := 'cwcraigo';
+  SET @npasswd := 'Pa$$w0rd';
+  SET @fname   := 'Craig';
+  SET @lname   := 'Christensen';
 
-  CALL create_new_db_user(userid,nuserid,npasswd,fname,lname
-                          ,ugroup,sv_client_info,lv_result);
+  CALL create_new_db_user(@userid,@nuserid,@npasswd,@fname,@lname
+                          ,@ugroup,@sv_client_info,@lv_result);
 
   IF lv_result = 1 THEN
     SET @test2 := 1;
@@ -118,3 +114,7 @@ $$
 DELIMITER ;
 
 CALL test_create_new_db_user();
+
+
+
+

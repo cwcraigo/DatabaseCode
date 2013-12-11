@@ -47,29 +47,29 @@ END;
 
 -- Create transaction---------------------------------------------------
 CREATE TABLE transaction
-( transaction_id			NUMBER
-, transaction_account		VARCHAR2(15)	CONSTRAINT nn_transaction_1 NOT NULL
-, transaction_type			NUMBER
-, transaction_date			DATE			CONSTRAINT nn_transaction_2 NOT NULL
-, transaction_amount		FLOAT			CONSTRAINT nn_transaction_3 NOT NULL
-, rental_id					NUMBER
-, payment_method_type		NUMBER
-, payment_account_number	VARCHAR2(19)	CONSTRAINT nn_transaction_4 NOT NULL
-, created_by				NUMBER
-, creation_date				DATE			CONSTRAINT nn_transaction_5 NOT NULL
-, last_updated_by			NUMBER
-, last_update_date			DATE			CONSTRAINT nn_transaction_6 NOT NULL
+( transaction_id			     NUMBER
+, transaction_account		   VARCHAR2(15)	 CONSTRAINT nn_transaction_1 NOT NULL
+, transaction_type			   NUMBER
+, transaction_date			   DATE			     CONSTRAINT nn_transaction_2 NOT NULL
+, transaction_amount		   FLOAT			   CONSTRAINT nn_transaction_3 NOT NULL
+, rental_id					       NUMBER
+, payment_method_type		   NUMBER
+, payment_account_number	 VARCHAR2(19)	 CONSTRAINT nn_transaction_4 NOT NULL
+, created_by				       NUMBER
+, creation_date				     DATE			     CONSTRAINT nn_transaction_5 NOT NULL
+, last_updated_by			     NUMBER
+, last_update_date			   DATE			     CONSTRAINT nn_transaction_6 NOT NULL
 , CONSTRAINT	pk_transaction_1 PRIMARY KEY (transaction_id)
 , CONSTRAINT fk_transaction_1 FOREIGN KEY (transaction_type)
-	REFERENCES	common_lookup(common_lookup_id)
+	 REFERENCES	common_lookup(common_lookup_id)
 , CONSTRAINT fk_transaction_2 FOREIGN KEY (rental_id)
-	REFERENCES	rental(rental_id)
+	 REFERENCES	rental(rental_id)
 , CONSTRAINT fk_transaction_3 FOREIGN KEY (payment_method_type)
-	REFERENCES	common_lookup(common_lookup_id)
+	 REFERENCES	common_lookup(common_lookup_id)
 , CONSTRAINT fk_transaction_4 FOREIGN KEY (created_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 , CONSTRAINT fk_transaction_5 FOREIGN KEY (last_updated_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 );
 
 	-- Create a sequence-------------------------------------------
@@ -99,11 +99,11 @@ SELECT
 , lookup_code
 FROM
 (
-(SELECT 'TRANSACTION' AS lookup_table
-		,'TRANSACTION_TYPE' AS lookup_column
-		,'CREDIT' AS lookup_type
-		,'Credit' AS lookup_meaning
-		,'CR' AS lookup_code
+(SELECT 'TRANSACTION'      AS lookup_table
+		,   'TRANSACTION_TYPE' AS lookup_column
+		,   'CREDIT'           AS lookup_type
+		,   'Credit'           AS lookup_meaning
+		,   'CR'               AS lookup_code
 FROM dual) UNION ALL
 (SELECT 'TRANSACTION','TRANSACTION_TYPE','DEBIT','Debit','DR'
 FROM dual) UNION ALL
@@ -124,13 +124,15 @@ FROM dual)
 );
 
 -- 	Update rental_item_type----------------------------------------
-UPDATE rental_item
-	SET rental_item_type = CASE
-			WHEN rental_item_type = 1021 THEN 1030
-			WHEN rental_item_type = 1022 THEN 1031
-			WHEN rental_item_type = 1023 THEN 1032
-			ELSE rental_item_type
-		END;
+UPDATE rental_item ri
+  SET ri.rental_item_type =
+    (SELECT cl1.common_lookup_id
+     FROM common_lookup cl1
+     WHERE cl1.common_lookup_column = 'RENTAL_ITEM_TYPE'
+     AND cl1.common_lookup_type =
+      (SELECT cl2.common_lookup_type
+       FROM common_lookup cl2
+       WHERE cl2.common_lookup_id = ri.rental_item_type));
 
 -- ------------------------------------------------------------
 -- STEP 3
@@ -138,20 +140,20 @@ UPDATE rental_item
 -- A CREATE airport AND account_list--------------------------
 -- Create airport---------------------------------------------------
 CREATE TABLE airport
-( airport_id		NUMBER
-, airport_code		VARCHAR2(3)		CONSTRAINT nn_airport_1 NOT NULL
-, airport_city		VARCHAR2(30)	CONSTRAINT nn_airport_2 NOT NULL
-, city				VARCHAR2(30)	CONSTRAINT nn_airport_3 NOT NULL
-, state_province	VARCHAR2(30)	CONSTRAINT nn_airport_4 NOT NULL
-, created_by		NUMBER
-, creation_date		DATE			CONSTRAINT nn_airport_5 NOT NULL
-, last_updated_by	NUMBER
-, last_update_date	DATE			CONSTRAINT nn_airport_6 NOT NULL
+( airport_id		    NUMBER
+, airport_code		  VARCHAR2(3)		CONSTRAINT nn_airport_1 NOT NULL
+, airport_city		  VARCHAR2(30)	CONSTRAINT nn_airport_2 NOT NULL
+, city				      VARCHAR2(30)	CONSTRAINT nn_airport_3 NOT NULL
+, state_province	  VARCHAR2(30)	CONSTRAINT nn_airport_4 NOT NULL
+, created_by		    NUMBER
+, creation_date		  DATE			    CONSTRAINT nn_airport_5 NOT NULL
+, last_updated_by	  NUMBER
+, last_update_date	DATE			    CONSTRAINT nn_airport_6 NOT NULL
 , CONSTRAINT	pk_airport_1 PRIMARY KEY (airport_id)
 , CONSTRAINT fk_airport_1 FOREIGN KEY (created_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 , CONSTRAINT fk_airport_2 FOREIGN KEY (last_updated_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 );
 
 -- Create a sequence-------------------------------------------
@@ -159,21 +161,21 @@ CREATE SEQUENCE airport_s1 START WITH 1;
 
 -- Create account_list---------------------------------------------------
 CREATE TABLE account_list
-( account_list_id	NUMBER
-, account_number	VARCHAR2(10)	CONSTRAINT nn_account_list_1 NOT NULL
-, consumed_date		DATE
-, consumed_by		NUMBER
-, created_by		NUMBER
-, creation_date		DATE			CONSTRAINT nn_account_list_2 NOT NULL
-, last_updated_by	NUMBER
-, last_update_date	DATE			CONSTRAINT nn_account_list_3 NOT NULL
+( account_list_id	 NUMBER
+, account_number	 VARCHAR2(10)	CONSTRAINT nn_account_list_1 NOT NULL
+, consumed_date		 DATE
+, consumed_by		   NUMBER
+, created_by		   NUMBER
+, creation_date		 DATE			    CONSTRAINT nn_account_list_2 NOT NULL
+, last_updated_by	 NUMBER
+, last_update_date DATE			    CONSTRAINT nn_account_list_3 NOT NULL
 , CONSTRAINT	pk_account_list_1 PRIMARY KEY (account_list_id)
 , CONSTRAINT fk_account_list_1 FOREIGN KEY (consumed_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 , CONSTRAINT fk_account_list_2 FOREIGN KEY (created_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 , CONSTRAINT fk_account_list_3 FOREIGN KEY (last_updated_by)
-	REFERENCES	system_user(system_user_id)
+	 REFERENCES	system_user(system_user_id)
 );
 
 -- Create a sequence-------------------------------------------
@@ -210,14 +212,44 @@ FROM dual) UNION ALL
 FROM dual)
 );
 
---
--- UPDATE contact
--- 	SET first_name = 'Lily'
--- 	WHERE first_name = 'Lila';
---
 -- 	C SEED account_list----------------------------------------
 	-- TO LOOK AT STORED PROCEDURES USE:
 		-- SELECT object_name FROM user_procedures;
+
+-- Create or replace seeding procedure.
+CREATE OR REPLACE PROCEDURE seed_account_list IS
+BEGIN
+  /* Set savepoint. */
+  SAVEPOINT all_or_none;
+
+  FOR i IN (SELECT DISTINCT airport_code FROM airport) LOOP
+    FOR j IN 1..50 LOOP
+
+      INSERT INTO account_list
+      VALUES
+      ( account_list_s1.NEXTVAL
+      , i.airport_code||'-'||LPAD(j,6,'0')
+      , NULL
+      , NULL
+      , 2
+      , SYSDATE
+      , 2
+      , SYSDATE);
+    END LOOP;
+  END LOOP;
+
+  /* Commit the writes as a group. */
+  COMMIT;
+
+EXCEPTION
+  WHEN OTHERS THEN
+    /* This undoes all DML statements to this point in the procedure. */
+    ROLLBACK TO SAVEPOINT all_or_none;
+    dbms_output.put_line('Error in seed_account_list(): '||SQLERRM);
+END;
+/
+
+SET SERVEROUTPUT ON SIZE UNLIMITED
 EXECUTE seed_account_list();
 
 SELECT COUNT(DISTINCT airport_code) AS "# Airports"
@@ -228,7 +260,8 @@ FROM   account_list;
 
 -- 	D UPDATE state_province IN address-------------------------
 UPDATE address
-	SET state_province = CASE
+	SET state_province =
+    CASE
 			WHEN state_province = 'CA' THEN 'California'
 			WHEN state_province = 'UT' THEN 'Utah'
 			ELSE state_province
@@ -355,6 +388,8 @@ CREATE TABLE transaction_upload
       MISSING FIELD VALUES ARE NULL )
     LOCATION ('transaction_upload.csv'))
 REJECT LIMIT UNLIMITED;
+
+SELECT COUNT(*) FROM transaction_upload;
 
 -- ------------------------------------------------------------
 -- STEP 5
@@ -500,11 +535,11 @@ MERGE INTO transaction target
 	INNER JOIN common_lookup cl1
 		ON  cl1.common_lookup_table = 'TRANSACTION'
 		AND cl1.common_lookup_column = 'TRANSACTION_TYPE'
-		AND cl1.common_lookup_type = 'DEBIT'
+		AND cl1.common_lookup_type = tu.transaction_type
 	INNER JOIN common_lookup cl2
 		ON  cl2.common_lookup_table = 'TRANSACTION'
 		AND cl2.common_lookup_column = 'PAYMENT_METHOD_TYPE'
-		AND cl2.common_lookup_type = 'DISCOVER_CARD'
+		AND cl2.common_lookup_type = tu.payment_method_type
 	LEFT JOIN transaction t
 		ON  t.transaction_account = tu.account_number
 		AND t.transaction_amount = tu.transaction_amount

@@ -1,7 +1,8 @@
 -- --------------------------------------------------------------------------------
---  Program Name:   seed_mysql_store_ri2.sql
+--  Program Name:   create_mysql_store_ri.sql
+--  Lab Assignment: Lab #4
 --  Program Author: Michael McLaughlin
---  Creation Date:  12-FEB-2013
+--  Creation Date:  02-Mar-2010
 -- --------------------------------------------------------------------------------
 
 -- Open log file.
@@ -37,7 +38,7 @@ INTO system_user
 , last_updated_by
 , last_update_date)
 VALUES
-('DBA', 2, 1,'Henry','Patrick', 1001, UTC_DATE(), 1001, UTC_DATE());
+('DBA', 2, 1,'Henry','Patrick', 1, UTC_DATE(), 1, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO system_user' AS "Statement";
@@ -53,7 +54,7 @@ INTO system_user
 , last_updated_by
 , last_update_date)
 VALUES
-('DBA', 2, 1,'Puri','Manmohan', 1001, UTC_DATE(), 1001, UTC_DATE());
+('DBA', 2, 1,'Puri','Manmohan', 1, UTC_DATE(), 1, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO member' AS "Statement";
@@ -72,7 +73,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_context = 'MEMBER'
   AND      common_lookup_type = 'DISCOVER_CARD')
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_member_id := last_insert_id();
 
@@ -94,7 +95,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Winn','Randi'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -116,7 +117,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -132,7 +133,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'10 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -154,7 +155,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','111-1111'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO contact' AS "Statement";
@@ -174,7 +175,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Winn','Brian'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -196,7 +197,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -212,7 +213,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'10 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -234,7 +235,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','111-1111'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO member' AS "Statement";
@@ -253,7 +254,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_context = 'MEMBER'
   AND      common_lookup_type = 'DISCOVER_CARD')
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_member_id := last_insert_id();
 
@@ -275,7 +276,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Vizquel','Oscar'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -297,7 +298,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -313,7 +314,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'12 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -335,7 +336,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','222-2222'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO contact' AS "Statement";
@@ -355,7 +356,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Vizquel','Doreen'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -377,7 +378,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -393,7 +394,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'12 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -415,7 +416,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','222-2222'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO member' AS "Statement";
@@ -434,7 +435,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_context = 'MEMBER'
   AND      common_lookup_type = 'DISCOVER_CARD')
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_member_id := last_insert_id();
 
@@ -456,7 +457,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Sweeney','Meaghan'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -478,7 +479,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -494,7 +495,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'14 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -516,7 +517,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','333-3333'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO contact' AS "Statement";
@@ -536,7 +537,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Sweeney','Matthew'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -558,7 +559,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -574,7 +575,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'14 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -596,7 +597,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','333-3333'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO contact' AS "Statement";
@@ -617,7 +618,7 @@ INSERT INTO contact
   WHERE    common_lookup_context = 'CONTACT'
   AND      common_lookup_type = 'CUSTOMER')
 ,'Sweeney','Ian','M'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_contact_id := last_insert_id();
 
@@ -639,7 +640,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'San Jose','CA','95192'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 SET @lv_address_id := last_insert_id();
 
@@ -655,7 +656,7 @@ INSERT INTO street_address
 VALUES
 (@lv_address_id
 ,'14 El Camino Real'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO telephone' AS "Statement";
@@ -677,33 +678,7 @@ VALUES
   FROM     common_lookup
   WHERE    common_lookup_type = 'HOME')
 ,'USA','408','333-3333'
-, 1002, UTC_DATE(), 1002, UTC_DATE());
-
--- Echo to screen statement message.
-SELECT 'INSERT INTO item "The Hunt for Red October"' AS "Statement";
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000QUA4PF'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'The Hunt for Red October','Special Collectornulls Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'1990-03-02'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 2, UTC_DATE(), 2, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -712,24 +687,20 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000WAS3IL'
+('9736-05640-4'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Star Wars I','Phantom Menace'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'1999-05-04'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'The Hunt for Red October','Special Collectornulls Edition','PG'
+,'19900302'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -738,24 +709,42 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000NOP4JH'
+('24543-02392'
+,(SELECT   common_lookup_id
+  FROM     common_lookup
+  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
+,'Star Wars I','Phantom Menace','PG'
+,'19990504'
+, 3, UTC_DATE(), 3, UTC_DATE());
+
+-- Echo to screen statement message.
+SELECT 'INSERT INTO item' AS "Statement";
+INSERT INTO item
+( item_barcode
+, item_type
+, item_title
+, item_subtitle
+, item_rating
+, item_release_date
+, created_by
+, creation_date
+, last_updated_by
+, last_update_date)
+VALUES
+('24543-5615'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Star Wars II','Attack of the Clones'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-16'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Star Wars II','Attack of the Clones','PG'
+,'20020516'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -764,24 +753,20 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000PMN4GT'
+('24543-05539'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Star Wars II','Attack of the Clones'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-16'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Star Wars II','Attack of the Clones','PG'
+,'20020516'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -790,51 +775,43 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MEN4PI'
+('24543-20309'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Star Wars III','Revenge of the Sith'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2005-05-19'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Star Wars III','Revenge of the Sith','PG13'
+,'20050519'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
-SELECT 'INSERT INTO item "The Chronicles of Narnia: The Lion, the Witch and the Wardrobe"' AS "Statement";
+SELECT 'INSERT INTO item' AS "Statement";
 INSERT INTO item
 ( item_barcode
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000QAR3OL'
+('86936-70380'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
 ,'The Chronicles of Narnia'
-,'The Lion, the Witch and the Wardrobe'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-16'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'The Lion, the Witch and the Wardrobe','PG'
+,'20020516'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -843,24 +820,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000SCX3ML'
+('91493-06475'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'XBOX')
-,'RoboCop',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'M'
-  AND      rating_agency = 'ESRB')
-,'2003-07-24'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'RoboCop',null,'Mature','20030724'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -869,24 +841,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000NMI3IK'
+('93155-11810'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'XBOX')
-,'Pirates of the Caribbean',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'T'
-  AND      rating_agency = 'ESRB')
-,'2003-06-30'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Pirates of the Caribbean',null,'Teen','20030630'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -895,25 +862,20 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000WSE2HJ'
+('12725-00173'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'XBOX')
 ,'The Chronicles of Narnia'
-,'The Lion, the Witch and the Wardrobe'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'E'
-  AND      rating_agency = 'ESRB')
-,'2003-06-30'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'The Lion, the Witch and the Wardrobe','Everyone','20030630'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -922,24 +884,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000KJI3RE'
+('45496-96128'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'NINTENDO_GAMECUBE')
-,'MarioKart','Double Dash'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'E'
-  AND      rating_agency = 'ESRB')
-,'2003-11-17'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'MarioKart','Double Dash','Everyone','20031117'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -948,24 +905,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000REE2VC'
+('08888-32214'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'PLAYSTATION2')
-,'Splinter Cell','Chaos Theory'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'T'
-  AND      rating_agency = 'ESRB')
-,'2003-04-08'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Splinter Cell','Chaos Theory','Teen','20030408'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -974,24 +926,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000TGB2JK'
+('14633-14821'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'PLAYSTATION2')
-,'Need for Speed','Most Wanted'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'E'
-  AND      rating_agency = 'ESRB')
-,'2004-11-15'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Need for Speed','Most Wanted','Everyone','20041115'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1000,24 +947,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MUR2DS'
+('10425-29944'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'XBOX')
-,'The DaVinci Code',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'T'
-  AND      rating_agency = 'ESRB')
-,'2006-05-19'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'The DaVinci Code',null,'Teen','20060519'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1026,24 +968,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MER2AS'
+('52919-52057'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'XBOX')
-,'Cars',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'E'
-  AND      rating_agency = 'ESRB')
-,'2006-04-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Cars',null,'Everyone','20060428'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1052,24 +989,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MZQ2PI'
+('9689-80547-3'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
-,'Beau Geste',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'1992-03-01'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Beau Geste',null,'PG','19920301'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1078,24 +1010,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000QYR2LK'
+('53939-64103'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
-,'I Remember Mama',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'NR'
-  AND      rating_agency = 'MPAA')
-,'1998-01-05'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'I Remember Mama',null,'NR','19980105'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1104,50 +1031,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MNV3BN'
+('24543-01292'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
-,'Tora! Tora! Tora!','The Attack on Pearl Harbor'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'G'
-  AND      rating_agency = 'MPAA')
-,'1999-11-02'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
--- Echo to screen statement message.
-SELECT 'INSERT INTO item "A Man for All Seasons"' AS "Statement";
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00YUIP3PF'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
-,'A Man for All Seasons',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'G'
-  AND      rating_agency = 'MPAA')
-,'1994-06-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Tora! Tora! Tora!','The Attack on Pearl Harbor','G','19991102'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1156,24 +1052,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MOQ4DT'
+('43396-60047'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
-,'Hook',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'19911211'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'A Man for All Seasons',null,'G','19940628'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1182,24 +1073,40 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MNP3GR'
+('43396-70603'
+,(SELECT   common_lookup_id
+  FROM     common_lookup
+  WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
+,'Hook',null,'PG','19911211'
+, 3, UTC_DATE(), 3, UTC_DATE());
+
+-- Echo to screen statement message.
+SELECT 'INSERT INTO item' AS "Statement";
+INSERT INTO item
+( item_barcode
+, item_type
+, item_title
+, item_subtitle
+, item_rating
+, item_release_date
+, created_by
+, creation_date
+, last_updated_by
+, last_update_date)
+VALUES
+('85391-13213'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_DOUBLE_TAPE')
-,'Around the World in 80 Days',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'G'
-  AND      rating_agency = 'MPAA')
-,'1992-12-04'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Around the World in 80 Days',null,'G','19921204'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1208,24 +1115,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MNP2TT'
+('85391-17843'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_DOUBLE_TAPE')
-,'Harry Potter and the Sorcerer''s Stone',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Harry Potter and the Sorcerer''s Stone',null,'PG','20020528'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO item' AS "Statement";
@@ -1234,749 +1136,19 @@ INSERT INTO item
 , item_type
 , item_title
 , item_subtitle
-, item_rating_id
+, item_rating
 , item_release_date
 , created_by
 , creation_date
 , last_updated_by
 , last_update_date)
 VALUES
-('ASIN: B000MNP2GT'
+('85391-10843'
 ,(SELECT   common_lookup_id
   FROM     common_lookup
   WHERE    common_lookup_type = 'VHS_DOUBLE_TAPE')
-,'Camelot',null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'G'
-  AND      rating_agency = 'MPAA')
-,'1998-05-15'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000MNP2KI'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Casino Royale'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2007-03-13'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000MNP2K8'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Casino Royale'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2007-03-13'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00005JLBE'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Die Another Day'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2003-06-03'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00008S2SF'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Die Another Day'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2003-06-03'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00005JLBE'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Die Another Day'
-,'2-Disc Ultimate Version'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2003-06-03'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00000K0E5'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Golden Eye'
-,'Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2003-06-03'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000M53GM2'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Golden Eye'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2003-06-03'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: 6304916558'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Tomorrow Never Dies'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'1998-05-13'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00000K0EA'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Tomorrow Never Dies'
-,'Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2000-05-16'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000NIBURQ'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'The World Is Not Enough'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2007-05-22'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00003CX95'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Brave Heart'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'R'
-  AND      rating_agency = 'MPAA')
-,'2000-08-29'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00000K3CJ'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Christmas Carol'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'G'
-  AND      rating_agency = 'MPAA')
-,'1999-10-05'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B0000AQS5D'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Scrooge'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'1998-10-21'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: 6305127719'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Clear and Present Danger'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'1998-10-21'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00008K76V'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Clear and Present Danger'
-,'Special Collector''s Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2003-05-06'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00003CXI1'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Sorcer''s Stone'
-,'Two-Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000062TU1'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Harry Potter and the Sorcer''s Stone'
-,'Full Screen Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00008DDXC'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Chamber of Secrets'
-,'Two-Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00008DDXC'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Harry Potter and the Chamber of Secrets'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2002-05-28'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B00005JMAH'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Prisoner of Azkaban'
-,'Two-Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2004-10-23'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B0002TT0NW'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Harry Potter and the Prisoner of Azkaban'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2004-10-23'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E6EK2Y'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Goblet of Fire'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2006-03-07'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E6EK2Y'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Goblet of Fire'
-,'Widescreen Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2006-03-07'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E6EK38'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_FULL_SCREEN')
-,'Harry Potter and the Goblet of Fire'
-,'Two Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2006-03-07'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E6EZ3Z'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Order of the Phoenix'
-,'Two Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2007-12-11'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E6E2FQ'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Half Blood Prince'
-,'Two Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG'
-  AND      rating_agency = 'MPAA')
-,'2009-12-08'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E54369'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Deathly Hallows, Part 1'
-,'Two Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2011-10-15'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000E5Q2RS'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'DVD_WIDE_SCREEN')
-,'Harry Potter and the Deathly Hallows, Part 2'
-,'Two Disc Special Edition'
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'PG-13'
-  AND      rating_agency = 'MPAA')
-,'2011-11-11'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
-
-INSERT INTO item
-( item_barcode
-, item_type
-, item_title
-, item_subtitle
-, item_rating_id
-, item_release_date
-, created_by
-, creation_date
-, last_updated_by
-, last_update_date)
-VALUES
-('ASIN: B000EHYKRS'
-,(SELECT   common_lookup_id
-  FROM     common_lookup
-  WHERE    common_lookup_type = 'VHS_SINGLE_TAPE')
-,'I Remember Mama'
-, null
-,(SELECT   rating_agency_id
-  FROM     rating_agency
-  WHERE    rating = 'G'
-  AND      rating_agency = 'MPAA')
-,'2011-11-11'
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+,'Camelot',null,'G','19980515'
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental' AS "Statement";
@@ -1994,7 +1166,7 @@ VALUES
   WHERE    last_name = 'Vizquel'
   AND      first_name = 'Oscar')
 , DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), DATE_ADD(DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), INTERVAL 5 DAY)
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental' AS "Statement";
@@ -2012,7 +1184,7 @@ VALUES
   WHERE    last_name = 'Vizquel'
   AND      first_name = 'Doreen')
 , DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), DATE_ADD(DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), INTERVAL 5 DAY)
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental' AS "Statement";
@@ -2030,7 +1202,7 @@ VALUES
   WHERE    last_name = 'Sweeney'
   AND      first_name = 'Meaghan')
 , DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), DATE_ADD(DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), INTERVAL 5 DAY)
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental' AS "Statement";
@@ -2048,7 +1220,7 @@ VALUES
   WHERE    last_name = 'Sweeney'
   AND      first_name = 'Ian')
 , DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), DATE_ADD(DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), INTERVAL 5 DAY)
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental' AS "Statement";
@@ -2066,7 +1238,7 @@ VALUES
   WHERE    last_name = 'Winn'
   AND      first_name = 'Brian')
 , DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), DATE_ADD(DATE_SUB(UTC_DATE(),INTERVAL 8 DAY), INTERVAL 5 DAY)
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 show warnings;
 
@@ -2093,7 +1265,7 @@ VALUES
   AND      i.item_subtitle = 'Phantom Menace'
   AND      i.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'DVD_WIDE_SCREEN')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2116,7 +1288,7 @@ VALUES
   WHERE    d.item_subtitle = 'Attack of the Clones'
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'DVD_WIDE_SCREEN')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2141,7 +1313,7 @@ VALUES
   AND      d.item_subtitle = 'Revenge of the Sith'
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'DVD_WIDE_SCREEN')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2165,9 +1337,8 @@ VALUES
   WHERE    d.item_title = 'I Remember Mama'
   AND      d.item_subtitle IS NULL
   AND      d.item_type = cl.common_lookup_id
-  AND      cl.common_lookup_type = 'VHS_SINGLE_TAPE'
-  AND      d.item_rating_id = 1001)
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+  AND      cl.common_lookup_type = 'VHS_SINGLE_TAPE')
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2192,7 +1363,7 @@ VALUES
   AND      d.item_subtitle IS NULL
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'VHS_DOUBLE_TAPE')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2217,7 +1388,7 @@ VALUES
   AND      d.item_subtitle IS NULL
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'VHS_SINGLE_TAPE')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2242,7 +1413,7 @@ VALUES
   AND      d.item_subtitle IS NULL
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'XBOX')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2267,7 +1438,7 @@ VALUES
   AND      d.item_subtitle IS NULL
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'XBOX')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Echo to screen statement message.
 SELECT 'INSERT INTO rental_item' AS "Statement";
@@ -2292,7 +1463,7 @@ VALUES
   AND      d.item_subtitle = 'Special Collectornulls Edition'
   AND      d.item_type = cl.common_lookup_id
   AND      cl.common_lookup_type = 'DVD_WIDE_SCREEN')
-, 1003, UTC_DATE(), 1003, UTC_DATE());
+, 3, UTC_DATE(), 3, UTC_DATE());
 
 -- Update all the NULL ALLOWED values in the MEMBER_TYPE column.
 SELECT 'UPDATE member' AS "Statement";
@@ -2301,6 +1472,10 @@ SET    member_type = (SELECT   common_lookup_id
                       FROM     common_lookup
                       WHERE    common_lookup_context = 'MEMBER'
                       AND      common_lookup_type = 'INDIVIDUAL');
+                      
+-- Modify the MEMBER table to add MEMBER_TYPE column.
+SELECT 'ALTER TABLE member ADD CONSTRAINT FOREIGN KEY(member_type)' AS "Statement";
+ALTER TABLE member ADD CONSTRAINT member_fk3 FOREIGN KEY(member_type) REFERENCES common_lookup(common_lookup_id);
 
 SELECT 'DROP PROCEUDRE IF EXISTS contact_insert' AS "Statement";
 DROP PROCEDURE IF EXISTS contact_insert;
@@ -2338,23 +1513,23 @@ BEGIN
   DECLARE telephone_id         int unsigned;
 
   /* Declare local constants for who-audit columns. */
-  DECLARE lv_created_by        int unsigned DEFAULT 1001;
+  DECLARE lv_created_by        int unsigned DEFAULT 1;
   DECLARE lv_creation_date     DATE         DEFAULT UTC_DATE();
-  DECLARE lv_last_updated_by   int unsigned DEFAULT 1001;
+  DECLARE lv_last_updated_by   int unsigned DEFAULT 1;
   DECLARE lv_last_update_date  DATE         DEFAULT UTC_DATE();
 
   /* Declare a locally scoped variable. */
   DECLARE duplicate_key INT DEFAULT 0;
-
+ 
   /* Declare a duplicate key handler */
   DECLARE CONTINUE HANDLER FOR 1062 SET duplicate_key = 1;
-
+  
   /* Start the transaction context. */
   START TRANSACTION;
-
+  
   /* Create a SAVEPOINT as a recovery point. */
   SAVEPOINT all_or_none;
-
+  
   /* Insert into the first table in sequence based on inheritance of primary keys by foreign keys. */
   INSERT INTO member
   ( member_type
@@ -2399,7 +1574,7 @@ BEGIN
   , lv_created_by
   , lv_creation_date
   , lv_last_updated_by
-  , lv_last_update_date );
+  , lv_last_update_date );  
 
   /* Preserve the sequence by a table related variable name. */
   SET contact_id = last_insert_id();
@@ -2408,7 +1583,7 @@ BEGIN
   INSERT INTO address
   VALUES
   ( null
-  , last_insert_id()
+  , contact_id
   ,(SELECT   common_lookup_id
     FROM     common_lookup
     WHERE    common_lookup_context = 'MULTIPLE'
@@ -2419,21 +1594,21 @@ BEGIN
   , lv_created_by
   , lv_creation_date
   , lv_last_updated_by
-  , lv_last_update_date );
+  , lv_last_update_date );  
 
   /* Preserve the sequence by a table related variable name. */
   SET address_id = last_insert_id();
-
+  
   /* Insert into the first table in sequence based on inheritance of primary keys by foreign keys. */
   INSERT INTO street_address
   VALUES
   ( null
-  , last_insert_id()
+  , address_id
   , pv_street_address
   , lv_created_by
   , lv_creation_date
   , lv_last_updated_by
-  , lv_last_update_date );
+  , lv_last_update_date );  
 
   /* Insert into the first table in sequence based on inheritance of primary keys by foreign keys. */
   INSERT INTO telephone
@@ -2453,17 +1628,17 @@ BEGIN
   , lv_last_updated_by
   , lv_last_update_date);
 
-  /* This acts as an exception handling block. */
+  /* This acts as an exception handling block. */  
   IF duplicate_key = 1 THEN
-
+ 
     /* This undoes all DML statements to this point in the procedure. */
     ROLLBACK TO SAVEPOINT all_or_none;
-
+ 
   END IF;
 
   /* This commits the write when successful and is harmless otherwise. */
   COMMIT;
-
+  
 END;
 $$
 
@@ -2490,11 +1665,11 @@ CREATE OR REPLACE VIEW contacts AS
   ,        a.state_province
   FROM     member m JOIN contact c ON m.member_id = c.member_id JOIN address a ON c.contact_id = a.contact_id;
 
-SELECT 'Query CONTACTS view' AS "Statement";
+SELECT 'Query CONTACTS view' AS "Statement";  
 SELECT * FROM contacts;
-
+  
 -- Create CURRENT_RENTAL view.
-SELECT 'CREATE OR REPLACE VIEW current_rental' AS "Statement";
+SELECT 'CREATE OR REPLACE VIEW current_rental' AS "Statement";  
 CREATE OR REPLACE VIEW current_rental AS
   SELECT   m.account_number
   ,        CASE
@@ -2521,12 +1696,12 @@ CREATE OR REPLACE VIEW current_rental AS
   AND      c.member_id = m.member_id
   ORDER BY 1,2,3;
 
-SELECT 'Query CURRENT_RENTAL view' AS "Statement";
+SELECT 'Query CURRENT_RENTAL view' AS "Statement";  
 SELECT   cr.full_name
 ,        cr.title
 ,        cr.product
 ,        cr.check_out_date
 ,        cr.return_date
 FROM     current_rental cr;
-
+       
 NOTEE
